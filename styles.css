@@ -1,0 +1,70 @@
+*, *::before,*::after {
+    box-sizing:border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 10px;
+}
+
+h1 {
+    font-size: 2.1rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+svg, h1 {
+    margin: auto 0;
+    width: min-content;
+    border: 2px solid red;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.company-logo {
+    display: flex;
+    border: 2px solid blue;
+} 
+
+.bookmark{
+    padding-left: auto;
+    width: 10%;
+}
+.company-logo__name {
+    width: 90%;
+}
+
+.navbar{
+    border: 2px solid black;
+}
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    float: left;
+    text-align: center;
+    padding: 1.4rem;
+    font-size: 1.4rem;
+}
+
+.navbar__hamburger-menu {
+    display: none;
+}
+
+@media (max-width:850px) {
+    .navbar {
+        position: relative;
+    }
+
+    .navbar a:not(:last-child) {
+        display: none;
+    }
+    .navbar__hamburger-menu {
+        display: block;
+        float: right;
+    }
+}
