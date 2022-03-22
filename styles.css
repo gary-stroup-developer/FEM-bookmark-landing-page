@@ -8,6 +8,10 @@ body {
     line-height: 1.6;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* this will wrap around entire page content to shift off the sides */
 .container{
   width: 90%;
@@ -28,7 +32,7 @@ body {
 }
 
 /* navbar links style */
-.navbar.row .hide-in-mobile{
+.hide-in-mobile{
     display: none;
 }
 
@@ -45,15 +49,23 @@ body {
 }
 
 /* hamburger menu */
-.navbar .navbar__hamburger-menu {
-    display: block;
+.navbar.row .navbar__hamburger-menu {
     position: absolute;
     top: 1.4rem;
     right:0;
     float: right;
 }
+
+.navbar.row .navbar__hamburger-menu.open {
+    display: block;
+}
+
+.navbar.row .navbar__hamburger-menu.close {
+    display: none;
+}
+
 /* displays when hamburger menu clicked and the .mobile class is added */
-.navbar.row.mobile .hide-in-mobile {
+.mobile .hide-in-mobile {
     text-decoration: none;
     color: #333;
     display: block;
@@ -81,7 +93,7 @@ body {
 }
 
 /* show categories when not in mobile version */
-.navbar.row.mobile .hide-in-mobile,.navbar.row .hide-in-mobile {
+  .navbar.row .hide-in-mobile {
     text-decoration: none;
     color: #333;
     display: inline-block;
@@ -90,9 +102,8 @@ body {
     font-size: 1.4rem;
 }
 
-
 /* hamburger menu */
-.navbar.row .navbar__hamburger-menu {
+.navbar.row .navbar__hamburger-menu.open,.navbar.row .navbar__hamburger-menu.close  {
     display: none;
 }
 
