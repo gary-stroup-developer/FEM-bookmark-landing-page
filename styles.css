@@ -8,8 +8,28 @@ body {
     line-height: 1.6;
 }
 
+h1 {
+  font-size: 3.6rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
 img {
   max-width: 100%;
+}
+
+hr {
+  height: 2px;
+  color: #333;
+  width: 100%;
+  max-width: 900px;
+  display: block;
 }
 
 /* this will wrap around entire page content to shift off the sides */
@@ -75,6 +95,25 @@ img {
 
 }
 
+.features {
+  padding: 3em 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.features__nav {
+  text-decoration-thickness: 5px;
+  text-decoration-color: red;
+  text-underline-offset: 1.1em;
+  font-size: 21px;
+}
+
+
+
 @media screen and (min-width: 850px) {
   /* when screen size gets big enough, set display to flex and push categories away from company logo */
 .row {
@@ -106,5 +145,21 @@ img {
 .navbar.row .navbar__hamburger-menu.open,.navbar.row .navbar__hamburger-menu.close  {
     display: none;
 }
+
+.features {
+  padding: 1em 0;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 0;
+  border: 2px solid #444;
+}
+
+.features__nav {
+  text-underline-offset: 0.4em;
+  border: 2px solid blue;
+  width: 100%;
+}
+
 
 }
