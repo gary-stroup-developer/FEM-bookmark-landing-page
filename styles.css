@@ -35,6 +35,7 @@ hr {
 /* this will wrap around entire page content to shift off the sides */
 .container{
   width: 90%;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -95,8 +96,17 @@ hr {
 
 }
 
+.features-section {
+  text-align: center;
+}
+
+.features-section p {
+  max-width: 450px;
+  margin: 0 auto 1.5rem auto;
+}
+
 .features {
-  padding: 3em 1em;
+  padding: 1em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -105,11 +115,32 @@ hr {
   width: 100%;
 }
 
+.features__border {
+  text-align: center;
+  width: 100%;
+  border-bottom: 1px solid #333;
+  padding-bottom: 1.2rem;
+}
+
+.features__border:first-child {
+  border-top: 1px solid #333;
+  padding-top: 1.25rem;
+}
+
 .features__nav {
-  text-decoration-thickness: 5px;
-  text-decoration-color: red;
-  text-underline-offset: 1.1em;
+  border-bottom: 5px solid red;
+  text-decoration: none;
+  padding-bottom: 1rem;
   font-size: 21px;
+  margin: 0 auto;
+}
+
+.features__tab {
+  width: 100%;
+}
+
+.features__tab-container {
+  margin: 20px auto;
 }
 
 
@@ -149,16 +180,23 @@ hr {
 .features {
   padding: 1em 0;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
-  gap: 0;
-  border: 2px solid #444;
+  gap: 20px;
 }
 
-.features__nav {
-  text-underline-offset: 0.4em;
-  border: 2px solid blue;
-  width: 100%;
+.features__border:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.features__border {
+  border-bottom: none;
+}
+
+.features {
+  border-bottom: 1px solid #333;
+  padding-bottom: 0;
 }
 
 
