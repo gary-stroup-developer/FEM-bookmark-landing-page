@@ -1,3 +1,43 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Soft Blue: hsl(231, 69%, 60%)
+- Soft Red: hsl(0, 94%, 66%)
+
+### Neutral
+
+- Grayish Blue: hsl(229, 8%, 60%)
+- Very Dark Blue: hsl(229, 31%, 21%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 18px
+
+### Fonts
+
+- Family: [Rubik](https://fonts.google.com/specimen/Rubik)
+- Weights: 400, 500 */
+
+:root {
+  --soft__blue: hsl(231,69%, 60%);
+  --soft__red: hsl(0, 94%, 66%);
+  --grayish__blue: hsl(229, 8%, 60%);
+  --dark__blue: hsl(229, 31%, 21%);
+  --body__font-size: 18px;
+}
+
 *, *::before,*::after {
     box-sizing:border-box;
 }
@@ -6,18 +46,20 @@ body {
     margin: 0;
     font-size: 10px;
     line-height: 1.6;
+    font-family: 'Rubik', sans-serif;
 }
 
 h1 {
-  font-size: 3.6rem;
+  font-size: 2.6rem;
 }
 
 h2 {
-  font-size: 2.8rem;
+  font-size: 1.8rem;
 }
 
 p {
   font-size: 1.2rem;
+  max-width: 450px;
 }
 
 img {
@@ -34,7 +76,7 @@ hr {
 
 /* this will wrap around entire page content to shift off the sides */
 .container{
-  width: 90%;
+  width: 60%;
   max-width: 1100px;
   margin: 0 auto;
 }
@@ -85,14 +127,30 @@ hr {
     display: none;
 }
 
+.hero__container {
+  position: relative;
+}
+
+.blob {
+  background-color: var(--soft__blue);
+  border-top-left-radius: 200px;
+  border-bottom-left-radius: 200px;
+  width: 110%;
+  height: 75%;
+  position: absolute;
+  top: 50px;
+  right: -60%;
+  z-index: -1;
+}
+
 /* displays when hamburger menu clicked and the .mobile class is added */
 .mobile .hide-in-mobile {
     text-decoration: none;
     color: #333;
     display: block;
     text-align: center;
-    padding: 1.4rem;
-    font-size: 1.4rem;
+    padding: 1.2rem;
+    font-size: 1.2rem;
 
 }
 
@@ -101,7 +159,6 @@ hr {
 }
 
 .features-section p {
-  max-width: 450px;
   margin: 0 auto 1.5rem auto;
 }
 
@@ -144,8 +201,27 @@ hr {
 }
 
 
-
 @media screen and (min-width: 850px) {
+  h1 {
+  font-size: 3.6rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+p {
+  font-size: 1.2rem;
+  max-width: 450px;
+
+  
+}
+
+.container{
+  width: 85%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
   /* when screen size gets big enough, set display to flex and push categories away from company logo */
 .row {
   display: flex;
@@ -176,6 +252,20 @@ hr {
 .navbar.row .navbar__hamburger-menu.open,.navbar.row .navbar__hamburger-menu.close  {
     display: none;
 }
+
+/* hero section styling */
+.hero {
+  margin-top: 5em;
+}
+
+.blob {
+  width: 110%;
+  height: 60%;
+  top: 100px;
+  right: -60%;
+
+}
+
 
 .features {
   padding: 1em 0;

@@ -16,23 +16,64 @@ function closeMenu() {
 
 }
 
-// function openMenu() {
-//   var open = document.getElementById("open");
-//   var close = document.getElementById("close");
-//   var nav = document.getElementById("navbar");
+const bookmarkingLink = document.getElementById("simple-bookmarking-link");
+const speedySearchLink = document.getElementById("speedy-search-link");
+const easyShareLink = document.getElementById("easy-sharing-link");
+let bookmarking = document.getElementById("simple-bookmarking");
+let speedySearch = document.getElementById("speedy-search");
+let easyShare = document.getElementById("easy-sharing");
 
-//   if (nav.className === "navbar row") {
-//     nav.className += " mobile";
-//     open.className = "navbar__hamburger-menu close";
-//     close.className = "navbar__hamburger-menu open";
-//   }
-//   else {
-//     nav.className = "navbar row"
-//     open.className = "navbar__hamburger-menu open";
-//     close.className = "navbar__hamburger-menu close";
-//   }
-      
-// }
-    
+bookmarkingLink.addEventListener("click", () => {
+  if (window.innerWidth < 850) {
+    bookmarking.style.display = "block";
+    speedySearch.style.display = "none";
+    easyShare.style.display = "none";
+  } else {
+    bookmarking.style.display = "flex";
+    speedySearch.style.display = "none";
+    easyShare.style.display = "none";
+  }
+
+});
+
+speedySearchLink.addEventListener("click", () => {
+  if (window.innerWidth < 850) {
+    speedySearch.style.display = "block";
+    bookmarking.style.display = "none";
+    easyShare.style.display = "none";
+  } else {
+    speedySearch.style.display = "flex"
+    bookmarking.style.display = "none";
+    easyShare.style.display = "none";
+  }
+});
+
+easyShareLink.addEventListener("click", () => {
+  if (window.innerWidth < 850) {
+    easyShare.style.display = "block";
+    bookmarking.style.display = "none";
+    speedySearch.style.display = "none";
+  } else {
+    easyShare.style.display = "flex";
+    bookmarking.style.display = "none";
+    speedySearch.style.display = "none";
+  }
+});
+
+window.addEventListener("resize", () => {
+  if (bookmarking.style.display === "block" && window.innerWidth > 850) {
+    bookmarking.style.display = "flex";
+  } else if(bookmarking.style.display === "flex" && window.innerWidth < 850) {
+    bookmarking.style.display = "block";
+  }else if(speedySearch.style.display === "block" && window.innerWidth > 850) {
+    speedySearch.style.display = "flex";
+  }else if(speedySearch.style.display === "flex" && window.innerWidth < 850) {
+    speedySearch.style.display = "block";
+  }else if(easyShare.style.display === "block" && window.innerWidth > 850) {
+    easyShare.style.display = "flex";
+  }else if(easyShare.style.display === "flex" && window.innerWidth < 850) {
+    easyShare.style.display = "block";
+  }
+})    
 
 

@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
   <title>Frontend Mentor | Bookmark landing page</title>
@@ -34,8 +36,8 @@
           </a>
         </div>
     </nav>
-    <section class="row">
-      <div>
+    <section class="hero row">
+      <div class="hero__container">
         <h1>A Simple Bookmark Manager</h1>
         <p>A clean and simple interface to organize your favourite websites. Open a new
           browser tab and see your sites load instantly. Try it for free.</p>
@@ -43,7 +45,7 @@
         <button>Get it on Firefox</button>
       </div>
 
-      <div>
+      <div class="hero__container">
         <img class="hero-image" src="./images/illustration-hero.svg" alt="hero image">
         <div class="blob"></div>
       </div>
@@ -54,18 +56,18 @@
       Your bookmarks sync between your devices so you can access them on the go.</p>
       <div class="features">
         <div class="features__border">
-          <a class="features__nav" href="#">Simple Bookmarking</a>
+          <a id="simple-bookmarking-link" class="features__nav" href="javascript:void(0);">Simple Bookmarking</a>
         </div>
         <div class="features__border">
-          <a class="features__nav" href="#">Speedy Searching</a>
+          <a id="speedy-search-link" class="features__nav" href="javascript:void(0);">Speedy Searching</a>
         </div>
         <div class="features__border">
-          <a class="features__nav" href="#">Easy Sharing</a>
+          <a id="easy-sharing-link" class="features__nav" href="javascript:void(0);">Easy Sharing</a>
         </div>
       </div>
-      <div class="features__tab simple-bookmarking row">
+      <div id="simple-bookmarking" class="features__tab simple-bookmarking row">
         <div class="features__tab-container">
-          <div class="blob"></div>
+          <div class="blob-left"></div>
           <img src="./images/illustration-features-tab-1.svg" alt="features section simple bookmarking illustration">
         </div>
         <div class="features__tab-container">
@@ -75,9 +77,9 @@
           <button>More Info</button>
         </div>
       </div>
-      <div class="features__tab speedy-search row">
+      <div id="speedy-search" class="features__tab speedy-search row">
         <div class="features__tab-container">
-          <div class="blob"></div>
+          <div class="blob-left"></div>
           <img src="./images/illustration-features-tab-2.svg" alt="features section speedy searching illustration">
         </div>
         <div class="features__tab-container">
@@ -87,9 +89,9 @@
           <button>More Info</button>
         </div>
       </div>
-      <div class="features__tab easy-sharing row">
+      <div id="easy-sharing" class="features__tab easy-sharing row">
         <div class="features__tab-container">
-          <div class="blob"></div>
+          <div class="blob-left"></div>
           <img src="./images/illustration-features-tab-3.svg" alt="">
         </div>
         <div class="features__tab-container">
