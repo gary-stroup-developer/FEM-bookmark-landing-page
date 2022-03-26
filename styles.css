@@ -47,6 +47,7 @@ body {
     font-size: 10px;
     line-height: 1.6;
     font-family: 'Rubik', sans-serif;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -83,12 +84,15 @@ button {
   border-radius: 8px;
   font-size: 17px;
   font-weight: 500;
+  margin: 15px auto;
 }
 
 footer {
+  position: relative;
   background-color: var(--dark__blue);
   color: #FAFAFA;
   text-align: center;
+  padding: 1em 0.5em;
 }
 
 .attribution { 
@@ -102,7 +106,7 @@ footer {
 
 /* this will wrap around entire page content to shift off the sides */
 .container{
-  width: 60%;
+  width: 90%;
   max-width: 1100px;
   margin: 0 auto;
 }
@@ -155,6 +159,11 @@ footer {
 
 .hero__container {
   position: relative;
+}
+
+.firefox-button {
+  background-color: var(--grayish__blue);
+  margin-left: 20px;
 }
 
 .blob {
@@ -242,7 +251,7 @@ footer {
   box-shadow:1px 2px 10px rgba(160, 162, 175, 0.719);
   padding: 2em;
   margin: 20px auto;
-  width: 300px;
+  max-width: 300px;
 }
 
 .card button {
@@ -265,7 +274,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-right: auto;
   width: 100%;
 }
 
@@ -285,6 +293,11 @@ footer {
 
 .dropdown-content p {
   font-size: 0.9rem;
+  text-align: left;
+}
+
+.faq{ 
+  margin: 20px auto;
 }
 
 .faq p,h2 {
@@ -357,8 +370,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
-  padding: 1em 0.5em;
 }
 
 .container{
@@ -410,6 +421,12 @@ footer {
 /* hero section styling */
 .hero {
   margin-top: 5em;
+ 
+}
+
+.hero__container p{
+ text-align: left;
+ margin-left: 0;
 }
 
 .blob {
