@@ -53,7 +53,7 @@ h1 {
   font-size: 2.4rem;
 }
 
-h2 {
+h2,h3 {
   font-size: 1.8rem;
 }
 
@@ -84,6 +84,21 @@ button {
   font-size: 17px;
   font-weight: 500;
 }
+
+footer {
+  background-color: var(--dark__blue);
+  color: #FAFAFA;
+  text-align: center;
+}
+
+.attribution { 
+  position:absolute; 
+  bottom: -10px; 
+  left: 35%; 
+  font-size: 11px; 
+  text-align: center; 
+}
+.attribution a { color: hsl(228, 83%, 93%); }
 
 /* this will wrap around entire page content to shift off the sides */
 .container{
@@ -217,7 +232,7 @@ button {
 }
 /* the download browsers styling section */
 .download-extensions {
-  margin: 0 auto;
+  margin: 8em auto;
   text-align: center;
 }
 
@@ -239,24 +254,85 @@ button {
 }
 
 .dropdown {
-  display: block;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .dropdown__container {
   position: relative;
+  border-bottom: 1px solid var(--soft__blue);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: auto;
+  width: 100%;
 }
 
-.dropdown__container p, img {
-  display: inline-block;
+
+.dropdown__container p {
+  font-size: 0.75rem;
 }
 
 .dropdown__container img {
-  margin-left: 10px;
+  margin-left: auto;
 }
 
 .dropdown-content{
   display: none;
+  flex: 1;
 }
+
+.dropdown-content p {
+  font-size: 0.9rem;
+}
+
+.faq p,h2 {
+  text-align: center;
+}
+
+.social-logo {
+  margin: 10px auto;
+}
+
+.social-logo + .social-logo {
+  margin-left: 25px;
+}
+
+.contact-form {
+  background-color: var(--soft__blue);
+  text-align: center;
+  padding: 2em;
+  color: #FAFAFA;
+}
+
+.contact-form__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form button {
+  background-color: red;
+  width: 100%;
+}
+
+.button-container {
+  width: 100%;
+  text-align: left;
+}
+
+.contact-form__input {
+  border: none;
+  line-height: 1.6rem;
+  border-radius: 5px;
+  padding: 16px 32px;
+  margin: 20px 0;
+  width: 100%;
+}
+
+
 
 
 @media screen and (min-width: 850px) {
@@ -268,9 +344,21 @@ h2 {
   font-size: 2.8rem;
 }
 
+h3 {
+  font-size: 1.8rem;
+}
+
 p {
   font-size: 1.2rem;
   max-width: 450px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 1em 0.5em;
 }
 
 .container{
@@ -287,6 +375,16 @@ p {
 /* holds the icon in one column and the categories and hamburger menu icon in the other column */
 .col {
   margin: auto;
+}
+
+.footer-nav {
+  width: 48%;
+  align-items: center;
+}
+
+.social {
+  width: 48%;
+  margin-left: auto;
 }
 
 /* take away padding that was used in mobile version since padding was applied to elements */
@@ -359,6 +457,29 @@ p {
 .opera {
   top: 4rem;
   margin-left: 40px;
+}
+
+.dropdown__container p {
+  max-width: 850px;
+  font-size: 1.2rem;
+}
+
+.dropdown-content p {
+  font-size: 1.2rem;
+}
+
+.contact-form button {
+  max-width: 250px;
+}
+
+.button-container {
+  width: 25%;
+  text-align: left;
+}
+
+.contact-form__input {
+  margin: 20px;
+  width: 40%;
 }
 
 

@@ -11,8 +11,7 @@
   <title>Frontend Mentor | Bookmark landing page</title>
 
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+
   </style>
 </head>
 <body>
@@ -140,9 +139,9 @@
         <li class="dropdown">
           <div class="dropdown__container">
             <p>What is Bookmark?</p>
-            <img src="./images/icon-arrow.svg" alt="arrow icon">
+            <img id="dropdown__answer-1" src="./images/icon-arrow.svg" alt="arrow icon">
           </div>
-          <div class="dropdown-content">
+          <div id="answer1" class="dropdown-content">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
             justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
           </div>
@@ -150,9 +149,9 @@
         <li class="dropdown">
           <div class="dropdown__container">
             <p>How can I request a new browser?</p>
-            <img src="./images/icon-arrow.svg" alt="arrow icon">
+            <img id="dropdown__answer-2" src="./images/icon-arrow.svg" alt="arrow icon">
           </div>
-          <div class="dropdown-content">
+          <div id="answer2" class="dropdown-content">
             <p>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
             Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
             ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
@@ -162,9 +161,9 @@
         <li class="dropdown">
           <div class="dropdown__container">
             <p>Is there a mobile app?</p>
-            <img src="./images/icon-arrow.svg" alt="arrow icon">
+            <img id="dropdown__answer-3" src="./images/icon-arrow.svg" alt="arrow icon">
           </div>
-          <div class="dropdown-content">
+          <div id="answer3" class="dropdown-content">
             <p>Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
             urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
             sollicitudin ex et ultricies bibendum.</p>
@@ -173,9 +172,9 @@
         <li class="dropdown">
           <div class="dropdown__container">
             <p>What about other Chromium browsers?</p>
-            <img src="./images/icon-arrow.svg" alt="arrow icon">
+            <img id="dropdown__answer-4" src="./images/icon-arrow.svg" alt="arrow icon">
           </div>
-          <div class="dropdown-content">
+          <div id="answer4" class="dropdown-content">
             <p>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
             vitae neque eget nisl gravida pellentesque non ut velit.</p>
           </div>
@@ -183,48 +182,29 @@
       </ul>
     </section>
   </main> 
-<!-- 
-  
-  
-  
+  <section class="contact-form">
+    <p>35,000+ already joined</p>
+    <h3>Stay up-to-date with what we’re doing</h3>
+    <div class="contact-form__info">
+      <input class="contact-form__input" type="text" placeholder="Enter your email address">
+      <div class="button-container">
+        <button>Contact Us</button>
+      </div>
+    </div>
 
-  <!-- Question 1 -->
- 
-
-  <!-- Answer 1 -->
-
-
-  <!-- Question 2 -->
-  
-
-  <!-- Answer 2 -->
-  
-
-  <!-- Question 3 -->
- 
-
-  <!-- Answer 3 -->
-
-
-  <!-- Question 4 -->
- 
-
-  <!-- Answer 4 -->
-
-
-  More Info
-
-  35,000+ already joined
-
-  Stay up-to-date with what we’re doing
-
-  Contact Us
-
-  Features
-  Pricing
-  Contact
-  
+  </section>
   <footer>
+    <div class="col row footer-nav">
+      <a class="logo" href="#"><img src="./images/logo-bookmark-light.svg" alt="bookmark logo"></a>
+      <p>Features</p>
+      <p>Pricing</p>
+      <p>Contact</p>
+    </div>
+
+    <div class="social">
+      <img class="social-logo" src="./images/icon-facebook.svg" alt="facebook logo">
+      <img class="social-logo" src="./images/icon-twitter.svg" alt="twitter logo">
+    </div>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Your Name Here</a>.

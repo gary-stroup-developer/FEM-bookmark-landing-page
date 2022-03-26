@@ -76,4 +76,47 @@ window.addEventListener("resize", () => {
   }
 })    
 
+const dropdownAnswer1 = document.getElementById("dropdown__answer-1");
+const dropdownAnswer2 = document.getElementById("dropdown__answer-2");
+const dropdownAnswer3 = document.getElementById("dropdown__answer-3");
+const dropdownAnswer4 = document.getElementById("dropdown__answer-4");
 
+dropdownAnswer1.addEventListener("click", () => {
+  let answer = document.getElementById("answer1");
+
+  if (answer.style.display === "none") {
+    answer.style.display = "block";
+  } else {
+    answer.style.display = "none";
+  }
+});
+
+dropdownAnswer2.addEventListener("click", () => {
+  let answer = document.getElementById("answer2");
+
+  if (answer.style.display === "none") {
+    answer.style.display = "block";
+  } else {
+    answer.style.display = "none";
+  }
+});
+
+dropdownAnswer3.addEventListener("click", () => {
+  let answer = document.getElementById("answer3");
+
+  if (answer.style.display === "none") {
+    answer.style.display = "block";
+  } else {
+    answer.style.display = "none";
+  }
+});
+
+dropdownAnswer4.addEventListener("click", () => {
+  let answer = document.getElementById("answer4");
+
+  if (answer.style.display === "none") {
+    answer.style.display = "block";
+  } else {
+    answer.style.display = "none";
+  }
+});
