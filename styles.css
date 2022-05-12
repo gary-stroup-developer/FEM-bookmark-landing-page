@@ -161,20 +161,23 @@ footer {
   position: relative;
 }
 
+.chrome-button {
+  margin-right: 20px;
+}
+
 .firefox-button {
   background-color: var(--grayish__blue);
-  margin-left: 20px;
 }
 
 .blob {
   background-color: var(--soft__blue);
   border-top-left-radius: 200px;
-  border-bottom-left-radius: 200px;
-  width: 110%;
-  height: 75%;
+  border-bottom-left-radius: 200px; 
+  width: 75%;
+  height: 20%; 
   position: absolute;
-  top: 50px;
-  right: -60%;
+  top: 80px;
+  right: -20%;
   z-index: -1;
 }
 
@@ -430,11 +433,8 @@ footer {
 }
 
 .blob {
-  width: 110%;
-  height: 60%;
-  top: 100px;
-  right: -60%;
-
+  height: 25%;
+  top: 200px;
 }
 
 
